@@ -1,5 +1,4 @@
 import React from "react"
-import emptyHeart from '../../images/heart-shape.svg'
 import "./CharacterCard.css"
 
 const CharacterCard = ({character, onClick}) => {
@@ -19,9 +18,6 @@ const CharacterCard = ({character, onClick}) => {
                         <p className="card-text">{status}</p>
                         <p className="card-text">{type}</p>
                         <p className="card-text">{gender}</p>
-                    </div>
-                    <div className="col-md-1">
-                        <img alt="Favorite" src={emptyHeart}/>
                     </div>
                 </div>
             </div>

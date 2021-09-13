@@ -1,0 +1,46 @@
+.dropTitle{
+    color: #000;
+    background-color: #fff;
+    box-shadow: 1px 9px 10px #e8e6e6;
+    width: 70%;
+    font-size: 18px;
+    margin: 1em 3em;
+    padding: 1.5em 6em;
+    border: 1px solid #dce6f0;
+    border-radius: 100px;
+    resize: vertical;
+}
+
+.dropTitle:hover{
+    color: #fff;
+    background-color: #212d5e;
+    box-shadow: 1px 9px 10px #dce6f0;
+}
+
+.dropContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.imgReturn{
+    margin-top: 5px;
+    margin-bottom: -100px;
+    margin-left: 100px;
+    width: 5%;
+}
+
+@media screen and (max-width: 360px) {
+    .dropTitle{
+        width: 70%;
+        font-size: 18px;
+        margin: 1em 1em;
+        padding: 1em 1em;
+    }
+    .imgReturn{
+        margin-top: 30px;
+        margin-bottom: -50px;
+        margin-left: 40px;
+        width: 9%;
+        margin-left: 40px;
+    }
+}

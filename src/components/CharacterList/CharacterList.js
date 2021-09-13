@@ -3,9 +3,10 @@ import { useEffect, useState } from 'react'
 import React from 'react'
 import CharacterCard from '../CharacterCard'
 import { useHistory } from "react-router-dom";
-import { Bar, Input, Button } from '../FilterBar/FilterBarElements.js'
+import { Bar, Input, Button } from './FilterBarElements'
 import { Title } from './CharacterListElements'
 import "./CharacterList.css"
+import { Link } from "react-router-dom"
 
 const CharacterList = () => {
 
@@ -32,7 +33,7 @@ const CharacterList = () => {
                 <Input type="text" placeholder="Personaje" onChange={(event) => {
                     setSearchTerm(event.target.value)
                 }} />
-                <Button as="a" href="#">Filtrar</Button>
+                <Link to='/filter'><Button as="a" href="#">Filtrar</Button></Link>
             </Bar>
             <Title>Personajes</Title>
             <div class="card-container">
