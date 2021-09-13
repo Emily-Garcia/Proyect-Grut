@@ -36,36 +36,3 @@
       transform: rotate(360deg);
     }
   }
-
-  .card-horizontal {
-    display: flex;
-    flex: 1 1 auto;
-  }
-
-  .character-image {
-    max-width: 200px;
-    border-radius: 100px;
-  }
-
-  .card-body {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .card-text  {
-    font-size: 15px;
-    padding-left: 2em;
-  }
-
-  .card-text-title {
-    font-size: 20px;
-    font-weight: bold;
-    padding-left: 1.5em;
-  }
-
-  .card{
-    max-width: 600px;
-    margin: 0 auto; /* Added */
-    float: none; /* Added */
-   margin-bottom: 10px; /* Added */
-  }

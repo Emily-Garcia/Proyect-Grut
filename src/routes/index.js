@@ -1,12 +1,13 @@
 import {Switch, Route} from 'react-router-dom'
-import CharacterCard from '../components/CharacterCard'
 import Home from '../views/Home'
+import CharacterDetail from '../views/CharacterDetail'
 
 function Routes() {
     return (
         <Switch>
-            <Route path='/' component={Home}/>
-            <Route render={() => <h1>Esta ruta no existe :(</h1>} />
+            <Route exact path='/' component={Home}/>
+            <Route exact path='/characters' component={Home}/>
+            <Route exact path='/characters/:characterId' component={CharacterDetail}/>
         </Switch>
     )
 }
