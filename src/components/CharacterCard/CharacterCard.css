@@ -1,29 +1,29 @@
-.card-horizontal {
+/* Colocamos la imagen y el texto de forma horizontal */
+  .card-horizontal {
     display: flex;
     flex: 1 1 auto;
   }
 
+/* Le damos un tamaño y redondeamos el borde de la imagen */
   .character-image {
     max-width: 200px;
     border-radius: 100px;
   }
 
-  .card-body {
-    display: flex;
-    flex-direction: column;
-  }
-
+/* Le damos estilo al texto de la información del personaje */
   .card-text  {
     font-size: 15px;
     padding-left: 2em;
   }
 
+/* Le damos estilo al titulo */
   .card-text-title {
     font-size: 20px;
     font-weight: bold;
     padding-left: 1.5em;
   }
 
+/* Creamos estilo para el contenedor de la imagen y el texto */
   .card{
     margin: 0 auto;
     float: none;

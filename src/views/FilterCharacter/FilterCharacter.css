@@ -1,3 +1,4 @@
+/* Al título del botón de opciones le agregamos sombra, y lo estilizamos */
 .dropTitle{
     color: #000;
     background-color: #fff;
@@ -11,17 +12,20 @@
     resize: vertical;
 }
 
+/* Cuando se pase por encima del botón lo estilizamos para que cambie de color */
 .dropTitle:hover{
     color: #fff;
     background-color: #212d5e;
     box-shadow: 1px 9px 10px #dce6f0;
 }
 
+/* Alineamos todos los elementos que se encuentran en el contenedor del botón */
 .dropContainer{
     display: flex;
     justify-content: center;
 }
 
+/* Le damos estilo a la imagen que regresa a la página principal */
 .imgReturn{
     margin-top: 5px;
     margin-bottom: -100px;
@@ -29,6 +33,7 @@
     width: 5%;
 }
 
+/* Hacemos nuestro diseño responsivo */
 @media screen and (max-width: 360px) {
     .dropTitle{
         width: 70%;

@@ -1,3 +1,4 @@
+/* Le damos estilo al contenedor de la información de cada personaje */
 .card-container {
     display: flex;
     flex-direction: row;

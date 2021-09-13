@@ -3,6 +3,7 @@ import {Nav, NavTitle} from './NavbarElements'
 import rick from '../../images/rick.svg'
 import morty from '../../images/morty.svg'
 
+//Creamos un componente Navbar que tendrá los componentes Nav y NavTitle
 const Navbar = () => {
     return (
         <>

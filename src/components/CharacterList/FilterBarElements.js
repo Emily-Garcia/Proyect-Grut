@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+//Creamos un componente que es el contenedor de toda la barra de búsqueda
+//Le damos estilo al componente
 export const Bar = styled.div`
     box-shadow: 1px 9px 10px #e8e6e6;
     @media screen and (max-width: 600px) {
@@ -23,7 +25,8 @@ export const Bar = styled.div`
         }
       }
 `
-
+//Creamos un componente, el cual es el imput para poder realizar el filtro entre los personajes
+//Le damos estilo al componente
 export const Input = styled.input`
     box-shadow: 1px 9px 10px #e8e6e6;
     width: 70%;
@@ -34,7 +37,8 @@ export const Input = styled.input`
     border-radius: 100px;
     resize: vertical;
 `
-
+//Creamos un componente boton, el cual nos llevará a la pantalla de filtro de personajes
+//Le damos estilo al componente
 export const Button = styled.button`
     color: white;
     font-weight: bold;

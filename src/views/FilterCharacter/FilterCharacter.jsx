@@ -6,12 +6,19 @@ import './FilterCharacter.css'
 import back from '../../images/back.svg'
 import { Link } from "react-router-dom"
 
+//Creamos la página del filtro de los personajes
 function FilterCharacter () {
+    //Creamos las variables:
+    //dropdown - es donde veremos si nuestro botón de opciones se ha presionado o no
+    //setDropdown - con esto seteamos el valor de la variable dropdown
+    //Repetimos estas dos variables cuatro veces, porque tendremos cuatro filtros
     const[dropdown, setDropdown] = useState(false)
     const[dropdown2, setDropdown2] = useState(false)
     const[dropdown3, setDropdown3] = useState(false)
     const[dropdown4, setDropdown4] = useState(false)
 
+    //Creamos la función openDropdown, donde cambiaremos el valor de la variable dropDown cada que se de clic al botón de opciones
+    //Repetimos la función cuatro veces, por los cuatro filtros
     const openDropdown = () => {
         setDropdown(!dropdown)
     }

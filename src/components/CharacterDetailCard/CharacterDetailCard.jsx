@@ -7,17 +7,23 @@ import { Link } from "react-router-dom"
 
 const CharacterDetailCard = () => {
 
+    //Creamos las variables
+    //character - el cual tendrá toda la información del personaje
+    //setCharacter - para poder asignarle valores a character
+    //characterId - este es el id del personaje, mostraremos el detalle del personaje que tiene ese id
     const [character, setCharacter] = useState([])
     const { characterId } = useParams()
 
+    //usamos la función useEffect para poder obtener toda la información de la API
     useEffect (() => {
         axios.get(`https://rickandmortyapi.com/api/character/${characterId}`)
             .then(res => {
                 const character = res.data
+                //metemos toda la información recibida en la variable character
                 setCharacter(character)
             })
             .catch(error => console.log(error))
-    }, [characterId])
+    }, [characterId]) //Esta función cambiará cada que cambie el id del personaje
 
     return (
             <div className="containerDiv">

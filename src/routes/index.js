@@ -3,6 +3,7 @@ import Home from '../views/Home'
 import CharacterDetail from '../views/CharacterDetail'
 import FilterCharacter from '../views/FilterCharacter'
 
+//Creamos esta función para poder crear rutas hacia las diferentes páginas y rutas dinámicas
 function Routes() {
     return (
         <Switch>
